@@ -14,7 +14,7 @@ res.json({message: 'The sample endpoint - ' + process.env.CONTRACT_ADDRESS }).st
 
 
 const provider = new ethers.JsonRpcProvider(process.env.INFURA_URL, "sepolia");
-const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+//const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 const contractABI = [
 "function transfer(address payable _to, uint256 _amount) public payable"
 ];
